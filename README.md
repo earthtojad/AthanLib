@@ -5,7 +5,7 @@ It provides accurate timings for Fajr, Dhuhr, Asr, Maghrib, and Isha anywhere in
 
 ---
 
-## 🌍 Features
+## 🌍 Features:
 
 - 📅 Compute daily prayer times for any date and location  
 - 🧭 Handles latitude, longitude, and timezone offsets  
@@ -16,11 +16,11 @@ It provides accurate timings for Fajr, Dhuhr, Asr, Maghrib, and Isha anywhere in
 ---
 
 
-## ⚙️ Installation
+## ⚙️ Installation:
 
 You don’t need to install anything special, just clone it and place the files in whatever project you're using it for.
 
-### 🧭 1. Download
+### 🧭 1. Download:
 
 ```bash
 git clone https://github.com/earthtojad/AthanLib.git
@@ -29,7 +29,7 @@ cd AthanLib
 
 
 
-### 2. Use in Your Projects
+### 2. Use in Your Projects:
 Copy these two files into your project:
 ```
 AthanLib.cpp
@@ -45,7 +45,7 @@ That’s it! 🎉
 
 ---
 
-## 🚀 Example Usage
+## 🚀 Example Usage:
 
 Here’s a simple example:
 
@@ -108,7 +108,42 @@ Isha:     19:39
 
 ---
 
-## 📦 File Structure
+## 🕰️ Calculation Conventions
+
+You can choose a prayer time convention by setting the **angle parameters** directly in code.
+
+Below is a reference of common conventions with suggested variable names and their corresponding Fajr and Isha angles:
+
+| Variable Name | Full Name | Fajr Angle (°) | Isha Angle (°) | Notes |
+|----------------|------------|----------------|----------------|-------|
+| `ISNA` | Islamic Society of North America | -15.0 | -15.0 | Commonly used in North America |
+| `MWL` | Muslim World League | -18.0 | -17.0 | Widely used globally and in many apps |
+| `Egypt` | Egyptian General Authority of Survey | -19.5 | -17.5 | Standard for Egypt and parts of Africa |
+| `Shia` | Shia Ithna-Ashari, Leva Institute (Qum) | -16.0 | -14.0 | Used by Shia institutions |
+| `UIS` | University of Islamic Sciences, Karachi | -18.0 | -18.0 | Common in South Asia (Pakistan, India) |
+| `UmmAlQura` | Umm al-Qura University, Makkah | -18.5 | 99.0 | Uses fixed offset for Isha instead of angle |
+| `France` | Muslims of France | -12.0 | -12.0 | Used by the French Muslim community |
+| `Russia` | Spiritual Administration of Muslims of Russia | -16.0 | -15.0 | Used in Russia and nearby regions |
+| `Singapore` | Islamic Religious Council of Singapore | -20.0 | -18.0 | Standard for Singapore and Southeast Asia |
+
+
+Angles are negative because they are below the horizon.
+
+
+---
+
+### 💡 Example Usage
+
+Just replace the ConvectionAngle parameter with whatever calculation method you follow:
+```cpp
+
+PrayerTimes today;
+today.calcPrayerTimes()
+today.calcPrayerTimes(day, month, year, lat, lon, timeZone, MWL); //Keep in mind in the example code we used ISNA as we're in North America
+
+```
+
+## 📦 File Structure:
 
 ```
 AthanLib/
@@ -120,14 +155,14 @@ AthanLib/
 
 ---
 
-## ⚖️ License
+## ⚖️ License:
 
 **AthanLib** is released under the **GPL-3.0 License**.  
 You are free to use, modify, and redistribute it, provided that your project also uses the GPL-3.0 license.
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing:
 
 Contributions are welcome!  
 If you find bugs, want to add regional calculation methods, or improve documentation:
@@ -140,6 +175,12 @@ If you find bugs, want to add regional calculation methods, or improve documenta
 3. Commit your changes and open a Pull Request 
 
 ---
+
+## 🌐 Sources:
+  Prayer Times Calculation, https://praytimes.org/docs/calculation
+  Computing Approximate Solar Coordinates,  https://aa.usno.navy.mil/faq/sun_approx
+  Twilight formula correction sources: https://astronomycenter.net/pdf/mohamoud_2017.pdf  &  https://www.sjctni.edu/Department/ma/eLecture/Twilight.pdf
+  Sign function: https://en.wikipedia.org/wiki/Sign_function
 
 ## Credits
 
