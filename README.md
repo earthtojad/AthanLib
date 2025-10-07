@@ -114,7 +114,7 @@ You can choose a prayer time convention by setting the **angle parameters** dire
 
 Below is a reference of common conventions with suggested variable names and their corresponding Fajr and Isha angles:
 
-| Variable Name | Full Name | Fajr Angle (°) | Isha Angle (°) | Notes |
+| Variable Name | Calculation Method | Fajr Angle (°) | Isha Angle (°) | Notes |
 |----------------|------------|----------------|----------------|-------|
 | `ISNA` | Islamic Society of North America | -15.0 | -15.0 | Commonly used in North America |
 | `MWL` | Muslim World League | -18.0 | -17.0 | Widely used globally and in many apps |
