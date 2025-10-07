@@ -121,7 +121,7 @@ Below is a reference of common conventions with suggested variable names and the
 | `Egypt` | Egyptian General Authority of Survey | -19.5 | -17.5 | Standard for Egypt and parts of Africa |
 | `Shia` | Shia Ithna-Ashari, Leva Institute (Qum) | -16.0 | -14.0 | Used by Shia institutions |
 | `UIS` | University of Islamic Sciences, Karachi | -18.0 | -18.0 | Common in South Asia (Pakistan, India) |
-| `UmmAlQura` | Umm al-Qura University, Makkah | -18.5 | 99.0 | Uses fixed offset for Isha instead of angle |
+| `UmmAlQura` | Umm al-Qura University, Makkah | -18.5 | N/A | Uses fixed offset for Isha instead of angle |
 | `France` | Muslims of France | -12.0 | -12.0 | Used by the French Muslim community |
 | `Russia` | Spiritual Administration of Muslims of Russia | -16.0 | -15.0 | Used in Russia and nearby regions |
 | `Singapore` | Islamic Religious Council of Singapore | -20.0 | -18.0 | Standard for Singapore and Southeast Asia |
