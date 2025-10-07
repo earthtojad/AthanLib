@@ -5,11 +5,13 @@
 #include <string>
 #include <utility>
 
+#define M_PI 3.141592653589793238462643
+
 // Math functions
  constexpr inline double deg2rad(double d);
  constexpr inline double rad2deg(double r);
- constexpr inline double norm360(double d); // Allows us to warp variables above 360 degrees into an angle between 0-360 degrees.
- constexpr inline double norm24(double h); // failsafe incase hours are >= 24
+  inline double norm360(double d); // Allows us to warp variables above 360 degrees into an angle between 0-360 degrees.
+  inline double norm24(double h); // failsafe incase hours are >= 24
  int sign(int x); //Formula sourced from "https://en.wikipedia.org/wiki/Sign_function"
 
 

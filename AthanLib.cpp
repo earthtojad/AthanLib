@@ -12,12 +12,12 @@
    return r * 180.0 / M_PI; 
    }
 
- constexpr inline double norm360(double d){// Allows us to warp variables above 360 degrees into an angle between 0-360 degrees.
+  inline double norm360(double d){// Allows us to warp variables above 360 degrees into an angle between 0-360 degrees.
   double r = std::fmod(d, 360.0); 
   return (r < 0 ? r + 360.0 : r); // Included this statement because fmod returns negative values. This statement corrects it.
   }
 
- constexpr inline double norm24(double h){// failsafe incase hours are >= 24
+  inline double norm24(double h){// failsafe incase hours are >= 24
    double r = std::fmod(h, 24.0);
   return (r < 0 ? r + 24.0 : r); //if r<0, add 24, else: r
   }
