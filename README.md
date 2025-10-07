@@ -9,8 +9,8 @@ It provides accurate timings for Fajr, Dhuhr, Asr, Maghrib, and Isha anywhere in
 
 - 📅 Compute daily prayer times for any date and location  
 - 🧭 Handles latitude, longitude, and timezone offsets  
-- ⚙️ Simple API — easy to integrate into any C++ project  
-- 🪶 Lightweight — no external libraries or dependencies  
+- ⚙️ Simple API, easy to integrate into any C++ project  
+- 🪶 Lightweight, no external libraries or dependencies  
 - 🧮 Based on well known astronomical conventions used around the world and in many countries  
 
 ---
