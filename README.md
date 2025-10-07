@@ -18,7 +18,7 @@ It provides accurate timings for Fajr, Dhuhr, Asr, Maghrib, and Isha anywhere in
 
 ## ⚙️ Installation
 
-You don’t need to install anything special — just clone and build.
+You don’t need to install anything special, just clone it and place the files in whatever project you're using it for.
 
 ### 🧭 1. Download
 
