@@ -20,7 +20,7 @@ It provides accurate timings for Fajr, Dhuhr, Asr, Maghrib, and Isha anywhere in
 
 You don’t need to install anything special — just clone and build.
 
-### 🧭 1. Get the Code
+### 🧭 1. Download
 
 ```bash
 git clone https://github.com/earthtojad/AthanLib.git
@@ -29,7 +29,7 @@ cd AthanLib
 
 
 
-### 2. 
+### 2. Use in Your Projects
 Copy these two files into your project:
 ```
 AthanLib.cpp
@@ -41,10 +41,6 @@ Then include it in your code:
 #include "AthanLib.h"
 ```
 
-Compile it with:
-```bash
-g++ main.cpp AthanLib.cpp -o my_app
-```
 That’s it! 🎉
 
 ---
