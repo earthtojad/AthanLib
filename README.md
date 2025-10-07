@@ -179,8 +179,11 @@ If you find bugs, want to add regional calculation methods, or improve documenta
 ## 🌐 Sources:
 
   -Prayer Times Calculation, https://praytimes.org/docs/calculation
+  
   -Computing Approximate Solar Coordinates,  https://aa.usno.navy.mil/faq/sun_approx
+  
   -Twilight formula correction sources: https://astronomycenter.net/pdf/mohamoud_2017.pdf  &  https://www.sjctni.edu/Department/ma/eLecture/Twilight.pdf
+  
   -Sign function: https://en.wikipedia.org/wiki/Sign_function
   
 ---
